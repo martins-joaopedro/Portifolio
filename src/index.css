@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Roboto+Mono:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  
+}
+
+html, body {
+    font-size: clamp(12px, 4vw, 16px);
+}
+
+html [data-theme = 'dark'] {
+    --background: #0a0a13;
+    --secondary: #cecece;
+
+    --accent-0: #3e5af79a;
+    --accent-1: #cc2af59a;
+    --accent-2: #fa28919a;
+    --accent-3: #f731629a;
+    --accent-4: #f75e2f9a;
+    --accent-5: #faa2309a;
+} 
+
+:root{
+    --background: #ece4de;
+    --bg-dark: #0a0a13;
+    --secondary: #0a0a13;
+
+    --accent-0: #3e5af7ef;
+    --accent-1: #cc2af5ef;
+    --accent-2: #fa2891ef;
+    --accent-3: #f73162ef;
+    --accent-4: #f75e2fef;
+    --accent-5: #faa230ef;
+    
+    --gradient: linear-gradient(45deg, var(--accent-medium-0), var(--accent-medium-1), var(--accent-medium-2), var(--accent-medium-3), var(--accent-medium-4), var(--accent-medium-5));
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
