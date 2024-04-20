@@ -1,6 +1,6 @@
 import {
     Container, BlobDiv
- } from './styles'
+} from './styles'
 
 export const Blob = () => {
     return(

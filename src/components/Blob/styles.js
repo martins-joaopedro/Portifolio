@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components"
  
 export const move = keyframes`
     0% {
-        transform: translateX(-20px) rotate(25deg) scale(0.8);
+        transform: translateX(100%) rotate(25deg) scale(0.8);
         background-position: 0%;
         box-shadow: 1px 1px 3rem var(--accent-5);
     }
@@ -27,7 +27,7 @@ export const move = keyframes`
 
     100% {
         background-position: 95%;
-        transform: rotate(0deg) translateX(10px) translateY(-10px) scale(0.8);
+        transform: rotate(0deg) translateX(100%) translateY(-10px) scale(0.8);
         box-shadow: -10px -10px 3rem var(--accent-2),10px 10px 3rem var(--accent-1);
     }
 `
@@ -57,10 +57,13 @@ export const Container = styled.div`
     display: grid;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: ${backgroundColors} 10s alternate infinite;
 `
 
 export const BlobDiv =  styled.div`
-    position: fixed;
     width: clamp(200px, 35vw, 350px);
     aspect-ratio: 1;
     background: linear-gradient(-45deg, var(--accent-0), var(--accent-1), var(--accent-2), var(--accent-3), var(--accent-4), var(--accent-5));
@@ -72,7 +75,6 @@ export const BlobDiv =  styled.div`
     filter: blur(80px);
 
     &:hover {
-        border: #ffffff81 solid 1px;
         scale: 1.5;
     }
 
