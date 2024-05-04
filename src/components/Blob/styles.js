@@ -15,7 +15,7 @@ export const move = keyframes`
 
     50% { 
         background-position: 25%;
-        transform: rotate(20deg) translateY(100px) scale(0.7);
+        transform: rotate(20deg) translateY(150px) scale(0.7);
         box-shadow: 5px 5px 3rem var(--accent-2);
     }
 
@@ -27,7 +27,7 @@ export const move = keyframes`
 
     100% {
         background-position: 95%;
-        transform: rotate(0deg) translateX(100%) translateY(-10px) scale(0.8);
+        transform: rotate(0deg) translateX(100%) translateY(100px) scale(0.8);
         box-shadow: -10px -10px 3rem var(--accent-2),10px 10px 3rem var(--accent-1);
     }
 `

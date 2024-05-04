@@ -1,5 +1,5 @@
 import { MainLayout } from "./components/MainLayout"
-import { About } from "./pages/About"
+import { About } from "./pages/AboutPages"
 import { Contact } from "./pages/Contact"
 import { Home } from "./pages/Home"
 
