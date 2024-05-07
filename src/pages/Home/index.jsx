@@ -7,7 +7,7 @@ import {
 
 export const Home = () => {
   return (
-    <Container>
+    <Container id="home">
       <Text>
         <p>Olá, me chamo</p>
         <h1>João Pedro</h1>

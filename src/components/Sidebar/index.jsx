@@ -2,7 +2,9 @@ import {
     Container,
     Wrapper,
     Button,
-    LinkButton
+    LinkButton,
+    Icon,
+    LinkName
 } from './styles.js'
 
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
@@ -11,6 +13,10 @@ export const Sidebar = ({ links }) => {
 
     const toggleSidebar = () => {
         document.querySelector("#sidebar").classList.toggle('shrink')
+    }
+
+    const navigateTo = (link) => {
+        document.querySelector(link).scrollIntoView({ behavior: 'smooth'})
     }
 
     return (
@@ -22,10 +28,13 @@ export const Sidebar = ({ links }) => {
                     <MdKeyboardDoubleArrowRight />
                 </Button>
                 {
-                    links?.map(({link, icon}, i) => (
-                        <LinkButton key={i}>
-                            <div>{icon}</div>
-                            <div id='links'>{link}</div>
+                    links?.map(({value, link, icon}, i) => (
+                        <LinkButton
+                            onClick={() => navigateTo(link)} 
+                            id="link-card"
+                            key={i}>
+                            <Icon id='icons'>{icon}</Icon>
+                            <LinkName id='name'>{value}</LinkName>
                         </LinkButton>
                     ))
                 }
