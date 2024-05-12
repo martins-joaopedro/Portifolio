@@ -8,10 +8,10 @@ export const Wrapper = styled.div`
 `
 
 export const Container = styled.div`
-    width: clamp(300px, 80vw, 500px);
+    width: clamp(300px, 80vw, 400px);
     height: 100%;
     pointer-events: all;
-    background: var(--bg-medium);
+    backdrop-filter: blur(10px);
     
     &.shrink {
         width: 80px;
