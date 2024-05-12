@@ -7,11 +7,13 @@ export const Container = styled.div`
 
     padding-left: 100px;
     background-color: var(--bg-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
 export const Section = styled.section`
     border: 1px solid white;
     color: #fff;
-    margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
 
