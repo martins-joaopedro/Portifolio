@@ -21,7 +21,7 @@ export const Sidebar = ({ links }) => {
 
     return (
         <Wrapper>
-            <Container id="sidebar">
+            <Container id="sidebar" className='shrink'>
                 <Button 
                     id="toggleIcon"
                     onClick={toggleSidebar}>

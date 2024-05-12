@@ -14,12 +14,14 @@ export const Container = styled.div`
     background: var(--bg-medium);
     
     &.shrink {
-        width: 90px;
+        width: 80px;
         opacity: 0.5;
     }
 
     &.shrink #name {
-       display: none;
+        height: 0;
+        transform: translateX(-10px);
+        opacity: 0;
     }
 
     #toggleIcon {
@@ -29,16 +31,9 @@ export const Container = styled.div`
     &.shrink #toggleIcon {
         transform: rotateY(0deg);
     }
-    
-    @media screen and (width < 768px) {
 
-        &.shrink {
-            width: clamp(30px, 15%, 60px);
-        }
-
-        &.shrink #link-card {
-            background-color: transparent;
-        }
+    &:hover {
+        opacity: 1;
     }
 
     transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -48,28 +43,33 @@ export const Button = styled.button`
     background: transparent;
     border: none;
     width: 100%;
-    height: 70px;
-
+    height: 10%;
+    
     font-size: 2rem;
     color: var(--txt);
-    transition: 0.3s ease-in-out; 
+    transition: 0.5s ease-in-out; 
 `
 
 export const LinkButton = styled.div`
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
-    height: 70px;
+    justify-content: flex-start;
+    overflow: hidden;
 
+    padding: 10px;
     margin: 10px;
-    padding: 15px;
     border-radius: 10px;
-    gap: 15px;
-    
-    background-color: #444;
-    font-size: 1.5rem;
+    max-height: 60px;
+
+    font-size: 1.2rem;
     color: var(--txt);
+    border: 1px solid var(--soft-gray);
+
+    transition: 0.2s ease-in-out;
+    
+    &:hover {
+        background-color: var(--soft-gray);
+    }
 `
 
 export const Icon = styled.div`
@@ -78,13 +78,16 @@ export const Icon = styled.div`
     justify-content: center;
 
     aspect-ratio: 1;
-    background-color: #444;
-    padding: 10px;
+    padding: 8px;
     border-radius: 5px;
+    font-size: 22px;
 `
 
 export const LinkName = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
+    overflow: hidden;
+
+    transition: 0.2s ease-in-out;
 `
