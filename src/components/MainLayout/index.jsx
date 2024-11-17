@@ -10,9 +10,9 @@ export const MainLayout = ({ children }) => {
   const links = [
     { value:"Home", link: "#home", icon: <IoHome /> },
     { value: "Sobre mim", link: "#sobre", icon: <ImProfile /> },
-    { value: "Projetos", link: "#sobre", icon: <FaLaptopCode /> },
-    { value: "Tecnologias", link: "#sobre", icon: <ImProfile /> },
-    { value: "Contato", link: "#sobre", icon: <TiContacts /> },
+    { value: "Projetos", link: "#projetos", icon: <FaLaptopCode /> },
+    { value: "Tecnologias", link: "#tech", icon: <ImProfile /> },
+    { value: "Contato", link: "#contato", icon: <TiContacts /> },
   ];
 
   return (
