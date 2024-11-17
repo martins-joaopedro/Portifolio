@@ -6,9 +6,9 @@ import { Home } from "./pages/Home"
 function App() {
   return (
     <MainLayout>
-      <Home />
+      {/* <Home /> */}
       <About />
-      <Contact />
+      {/* <Contact /> */}
     </MainLayout>  
   )
 }
