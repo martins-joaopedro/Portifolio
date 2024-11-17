@@ -1,10 +1,10 @@
-import { Sidebar } from "../Sidebar/index.jsx";
 import { Container, Main } from "./styles.js";
 
 import { IoHome } from "react-icons/io5";
 import { ImProfile } from "react-icons/im";
 import { FaLaptopCode } from "react-icons/fa";
 import { TiContacts } from "react-icons/ti";
+import { Header } from "../Header/index.jsx";
 
 export const MainLayout = ({ children }) => {
   const links = [
@@ -17,7 +17,7 @@ export const MainLayout = ({ children }) => {
 
   return (
     <Container>
-      <Sidebar links={links} />
+      <Header links={links} />
       <Main>{children}</Main>
     </Container>
   );

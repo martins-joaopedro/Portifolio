@@ -10,5 +10,4 @@ export const Main = styled.main`
     scroll-snap-type: y mandatory;
     height: 100vh;
     scroll-behavior: smooth;
-
 `
