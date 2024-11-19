@@ -3,8 +3,9 @@ import styles from "./styles.module.css";
 export const Header = ({ links }) => {
   
     const navigate = (link) => {
-        document.querySelector(link).scrollIntoView({ behavior: 'smooth'})
+      document.querySelector(link).scrollIntoView({ behavior: 'smooth'})
     }
+    
     return (
     <div className={styles.container}>
       {links.map(({value, link }) => (

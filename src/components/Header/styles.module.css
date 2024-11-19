@@ -1,24 +1,27 @@
 .container {
+    --header-width: clamp(200px, 95%, 700px);
+
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    width: clamp(200px, 95%, 700px);
+    gap: 10px;
+    padding: 10px;
+    width: var(--header-width);
     background-color: rgba(227, 227, 227, 0.951);
     position: fixed;
     top: 15px;
     left: 50%;
     z-index: 2;
     transform: translateX(-50%);
-    padding: 15px;
     border-radius: 45px;
     transition: 1s all;
     flex-wrap: wrap;
     backdrop-filter: blur(3px);
+    font-size: 1rem;
 }
 
 .linkPill {
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
     border-bottom: 1px solid transparent;
     transition: 0.2s all;
