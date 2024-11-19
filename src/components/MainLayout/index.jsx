@@ -11,7 +11,6 @@ export const MainLayout = ({ children }) => {
     { value:"Home", link: "#home", icon: <IoHome /> },
     { value: "Sobre mim", link: "#sobre", icon: <ImProfile /> },
     { value: "Projetos", link: "#projetos", icon: <FaLaptopCode /> },
-    { value: "Tecnologias", link: "#tech", icon: <ImProfile /> },
     { value: "Contato", link: "#contato", icon: <TiContacts /> },
   ];
 

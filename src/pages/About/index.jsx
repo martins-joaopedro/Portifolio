@@ -1,23 +1,63 @@
-import { Title } from '../../components/Title/index.jsx'
-import styles from './styles.module.css'
-import profile from '../../assets/profile.png'
+import { Title } from "../../components/Title/index.jsx";
+import styles from "./styles.module.css";
+import profile from "../../assets/profile.png";
+
+let text = `Em constante busca por aprimoramento, sou um programador focado na resolução de problemas de forma proativa, com uma forte capacidade de aprendizado contínuo.
+Procuro por uma posição em que eu possa utilizar minhas habilidades técnicas e colaborar para o meu desenvolvimento e para o sucesso da equipe.`;
+
+import { PiInstagramLogoLight } from "react-icons/pi";
+import { PiLinkedinLogoLight } from "react-icons/pi";
+import { PiGithubLogoLight } from "react-icons/pi";
+
+import { HiOutlineAcademicCap } from "react-icons/hi2";
+import { FaLaptopCode } from "react-icons/fa";
+import { IoPersonSharp } from "react-icons/io5";
 
 export const About = () => {
   return (
     <div className={styles.container} id="sobre">
       <section>
-        <img className={styles.avatar} src={profile} />
-        <h3>Sobre mim</h3>
-        <p>
-        Quando criança, minha mãe me presenteou com um carrinho de controle remoto. Não foi dois dias inteiros até eu o desmontar com a justificativa de: "mãe, só queria ver o que tinha dentro dele que o fazia andar". Assim, sempre fui curioso e determinado a descobrir o motivo das coisas. 
+        <div className={styles.intro}>
+          <div className={styles.title}>
+            <div>
+              <h1>João Pedro Martins Cruz</h1>
+              <h3>Desenvolvedor de Software</h3>
+            </div>
+          </div>
+          <img className={styles.avatar} src={profile} />
+        </div>
 
-Isso ao somar-se com o meu fascínio pela tecnologia e pela criação de novas coisas, me trouxe até os caminhos do desenvolvimento, onde me encontro. Atualmente, curso Ciência da Computação com um olhar especial pelos ramos multidisciplinares que a tecnologia possui.
+        <div className={styles.navigations}>
+          <button>
+            <IoPersonSharp />
+          </button>
+          <button>
+            <HiOutlineAcademicCap />
+          </button>
+          <button>
+            <FaLaptopCode />
+          </button>
+        </div>
 
-Possuo um domínio maior pelo desenvolvimento front-end, com experiência nas tecnologias da Web, Javascript, frameworks amplamente utilizados e bibliotecas como ReactJS. Além disso, continuo me aprimorando e buscando conhecimentos em outros ramos da área, como por exemplo, no Java para backend e ReactNative para o desenvolvimento Mobile. 
-
-Dessa forma, sigo me desafiando e complementando o meu leque de conhecimentos para uma maior capacitação e qualificação todos os dias.
-        </p>
+        <div className={styles.aboutSection}>
+          <span>Sobre Mim:</span>
+          <p>{text}</p>
+          <div className={styles.buttonsArea}>
+            <button>
+              <PiInstagramLogoLight />
+              Instagram
+            </button>
+            <button>
+              <PiLinkedinLogoLight />
+              Linkedin
+            </button>
+            <button>
+              <PiGithubLogoLight />
+              GitHub
+            </button>
+          </div>
+        </div>
       </section>
     </div>
-  )
-}
+  );
+};
