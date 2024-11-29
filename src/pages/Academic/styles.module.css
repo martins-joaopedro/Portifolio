@@ -1,0 +1,59 @@
+.academic {
+    --academicWidth: clamp(300px, 95%, 1000px); 
+    width: var(--academicWidth);
+    margin: auto;
+    margin-top: 100px;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.academic img {
+    width: 35%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: brightness(0.7) saturate(1.2) grayscale(0.2);
+}
+
+.academic .card {
+    padding: 15px;
+    border-radius: 35px;
+    background: var(--bg-dark);
+    display: flex;
+    flex-direction: column;
+}
+
+.academic .card h3 {
+    font-weight: bold;
+}
+
+.academic .card p {
+    font-size: 0.85rem;
+    margin: 8px 0;
+}
+
+.academic .card small {
+    align-self: flex-end;
+}
+
+.academic .header {
+    margin: 10px 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header img {
+    border: 2px solid;
+}
+
+@media screen and (width < 800px){
+    .cardContainer {
+        grid-template-columns: 1fr;
+    }
+}

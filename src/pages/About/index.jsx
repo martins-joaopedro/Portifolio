@@ -12,6 +12,10 @@ import { PiGithubLogoLight } from "react-icons/pi";
 import { HiOutlineAcademicCap } from "react-icons/hi2";
 import { FaLaptopCode } from "react-icons/fa";
 import { IoPersonSharp } from "react-icons/io5";
+import { Tech } from "../Tech/index.jsx";
+import { Academic } from "../Academic/index.jsx";
+
+const navigateTo = (id) => document.querySelector(`#${id}`).scrollIntoView({ behavior: "smooth"})
 
 export const About = () => {
   return (
@@ -28,7 +32,7 @@ export const About = () => {
         </div>
 
         <div className={styles.navigations}>
-          <button>
+          <button onClick={() => navigateTo("academic")}>
             <IoPersonSharp />
           </button>
           <button>
@@ -58,6 +62,10 @@ export const About = () => {
           </div>
         </div>
       </section>
+
+      <Academic />
+
+      <Tech/>
     </div>
   );
 };

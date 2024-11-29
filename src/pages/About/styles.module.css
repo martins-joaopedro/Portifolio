@@ -1,7 +1,7 @@
 .container {
     scroll-snap-align: start;
     min-width: 100vw;
-    min-height: 100vh;
+    min-height: 200vh;
     padding-top: 100px;
     background-color: #1c1c1c;
     color: var(--txt);
@@ -118,7 +118,6 @@ section {
     font-size: 1.15rem;    
 }
 
-
 @media screen and (width < 800px){
     section {
         display: block;
@@ -146,5 +145,9 @@ section {
         display: inline-flex;
         gap: 10px;
         width: 100%;
+    }
+    
+    .cardContainer {
+        grid-template-columns: 1fr;
     }
 }
