@@ -12,14 +12,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     aspect-ratio: 1;
-    width: 100px;
-    gap: 5px;
+    width: 120px;
+    gap: 15px;
     font-size: 0.85rem;
     padding: 10px;
     border-radius: 15px;
-    background: linear-gradient(-85deg, #9f9f9f, #101010, #272727);
+    background: linear-gradient(-85deg, #e5e5e56e, var(--bg-dark), #171717);
     background-size: 500%;
     background-position: 35%;
     color: var(--txt);
