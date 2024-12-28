@@ -14,6 +14,7 @@ import { FaLaptopCode } from "react-icons/fa";
 import { IoPersonSharp } from "react-icons/io5";
 import { Tech } from "../Tech/index.jsx";
 import { Academic } from "../Academic/index.jsx";
+import { Projects } from "../Projects/index.jsx";
 
 const navigateTo = (id) => document.querySelector(`#${id}`).scrollIntoView({ behavior: "smooth"})
 
@@ -64,8 +65,8 @@ export const About = () => {
       </section>
 
       <Academic />
-
       <Tech/>
+      <Projects />
     </div>
   );
 };

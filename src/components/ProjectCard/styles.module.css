@@ -1,0 +1,31 @@
+.container  {
+    display: flex;
+    gap: 10px;
+    border-radius: 15px;
+}
+
+.container div {
+    width: 50%;
+}
+
+.container div img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.projectInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.projectInfo .tech {
+    display: flex;
+    gap: 10px;
+}
+
+.projectInfo .tech span {
+    background-color: red;
+    border-radius: 25px;
+    padding: 5px 10px;
+}

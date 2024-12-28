@@ -1,0 +1,8 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: clamp(300px, 95%, 1000px);
+    margin: auto;
+    display: flex;
+}
