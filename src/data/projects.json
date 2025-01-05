@@ -1,40 +1,62 @@
 {
-    "data": [
-        {
-            "name": "Person Registry",
-            "image": "https://eq2imhfmrcc.exactdn.com/wp-content/uploads/2012/01/perro-cachorro.jpg?strip=all&lossy=1&ssl=1",
-            "description": "Serviço para Cadastro e Gerênciamento de Pessoas",
-            "tech": [
-                {"value": "Java", "icon": ""},
-                {"value": "Swing", "icon": ""}
-            ],
-            "status": 0,
-            "date": "11/2024",
-            "results": "Aplicação construída como uma atividade para a disciplina de Programação Orientada a Objetos",
-            "colors": ["#002220"]
-        },
-        {
-            "name": "Coffe App",
-            "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIyXBkmCuMQV_h2C1mOavkZKS1krtgABLyExgmaLa5n_qpmCHOTjsBztbGO7I6jKZhSIvaFJG4G_cwVQ4RRJBBxHmqODrulIB9swzVRw",
-            "description": "cdffd",
-            "tech": [
-                {}
-            ],
-            "status": 1,
-            "date": "",
-            "results": "",
-            "colors": ["#002220", "#022290"]
-        },
-        {
-            "name": "Valorant API",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWOzEOZsYlNCGZph3W-azgPncdM-DlaM1_KNaOY7l021p2mUSkvKxfKbCCyHDgSK-me-VIlMP4LTz5loIYUv5fX6GCQuTNt-2FsO5l9Q",
-            "description": "Loremdcs fdfdf",
-            "tech": [
-                {}
-            ],
-            "status": 2,
-            "date": "",
-            "colors": ["#002220", "#022290"]
-        }
-    ]
+  "data": [
+    {
+      "name": "BookSelf",
+      "image": "src/assets/bookself.png",
+      "description": "Aplicação para Gerenciamento de Coleção Pessoal de Livros",
+      "tech": [
+        { "value": "Java", "icon": "" },
+        { "value": "Swing", "icon": "" }
+      ],
+      "status": 0,
+      "results": [
+        "Desenvolvido em equipe como uma atividade para a disciplina de Programação Orientada a Objetos.",
+        "O usuário pode manter sua coleção, adicionar avaliações e ler as de outros usuários, enquanto o administrador pode gerenciar as avaliações e o acervo de livros."
+      ],
+      "colors": ["#add7e5"],
+      "github": "",
+      "deploy": ""
+    },
+    {
+      "name": "Person Registry",
+      "image": "",
+      "description": "Serviço para Cadastro e Gerênciamento de Pessoas",
+      "tech": [
+        { "value": "Java", "icon": "" },
+        { "value": "Swing", "icon": "" }
+      ],
+      "status": 0,
+      "date": "11/2024",
+      "results": [
+        "Aplicação construída como uma atividade para a disciplina de Programação Orientada a Objetos"
+      ],
+      "colors": ["#002220"],
+      "github": "",
+      "deploy": ""
+    },
+    {
+      "name": "Coffe App",
+      "image": "",
+      "description": "cdffd",
+      "tech": [{}],
+      "status": 1,
+      "date": "",
+      "results": [""],
+      "colors": ["#022290"],
+      "github": "",
+      "deploy": ""
+    },
+    {
+      "name": "Valorant API",
+      "image": "",
+      "description": "Loremdcs fdfdf",
+      "tech": [{}],
+      "status": 2,
+      "date": "",
+      "colors": ["#002220", "#022290"],
+      "results": [""],
+      "github": "",
+      "deploy": ""
+    }
+  ]
 }

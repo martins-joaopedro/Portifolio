@@ -41,7 +41,3 @@ html [data-theme = 'dark'] {
     
     --gradient: linear-gradient(45deg, var(--accent-medium-0), var(--accent-medium-1), var(--accent-medium-2), var(--accent-medium-3), var(--accent-medium-4), var(--accent-medium-5));
 }
-
-::-webkit-scrollbar {
-    display: none;
-}

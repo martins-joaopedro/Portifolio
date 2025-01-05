@@ -1,23 +1,22 @@
 .container  {
     display: flex;
-    gap: 25px;
     border-radius: 25px;
-    width: clamp(350px, 85vw, 800px);
-    height: clamp(500px, 80vh, 800px);
-    padding: 25px;
+    width: clamp(350px, 85vw, 900px);
+    height: clamp(500px, 80%, 600px);
     background: var(--bg-dark);
     margin: auto;
     position: relative;
     overflow: hidden;
-    box-shadow: 5px 5px 8px var(--bg-dark);
+    box-shadow: -5px 5px 8px #0b0b0b3e,
+    inset -1px 1px 3px #ffffff1f;
 }
 
 .view {
     scroll-snap-align: center;
     width: 100%;
     height: 100%;
-    margin-top: 10px;
-    animation: render 3s infinite alternate-reverse;
+    animation: render 7s infinite alternate-reverse;
+    background: linear-gradient(-135deg, var(--bg-dark), var(--color));
     background-size: 500%;
     display: flex;
     flex-direction: column;
@@ -25,10 +24,10 @@
 
 .image {
     overflow: hidden;
-    width: 50%;
+    width: clamp(350px, 50%, 500px);
     height: 100%;
     background: white;
-    border-radius: 22px;
+    border-radius: 22px 0 0 22px;
 }
 
 .image img {
@@ -55,7 +54,7 @@
 .status {
     display: flex;
     align-items: center;
-    align-self: flex-start;
+    align-self: flex-end;
     margin: 10px 0;
     gap: 5px;
     font-size: 0.75rem;
@@ -98,7 +97,7 @@
 }
 
 .description {
-    border-left: 1px solid gray;
+    border-left: 1px solid;
     padding-left: 10px;
 }
 
@@ -106,19 +105,19 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    padding: 22px;
 }
 
 .details p {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     opacity: 0.8;
-    line-height: 25px;
+    line-height: 18px;
+    margin-top: 10px;
 }
 
 .details h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    letter-spacing: 2px;
 }
 
 .details .tech {
@@ -129,15 +128,34 @@
 }
 
 .details .tech span {
-    border: 1px solid rgb(49, 49, 49);
+    border: 1px solid;
     border-radius: 25px;
     padding: 3px 8px;
     font-size: 0.75rem;
     opacity: 0.7;
 }
 
+::-webkit-scrollbar {
+  background: transparent;
+  width: 2px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #ffffff1f;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    height: 10px;
+}
+
 .buttons {
     display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 22px;
 }
 
 @media screen and (width < 768px) {
@@ -147,11 +165,23 @@
 
     .image {
         width: 100%;
-        height: 50%;
+        height: 45%;
+        
+    }
+
+    .image img {
+        object-fit: contain;
     }
 
     .details {
-        margin-top: 15px;
+        padding: 10px;
         width: 100%;
+    }
+
+    .details .results {
+        max-height: 120px;
+        padding: 5px;
+        border-radius: 15px;
+        overflow: scroll;
     }
 }
