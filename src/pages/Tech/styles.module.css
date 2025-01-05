@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: clamp(300px, 95%, 1000px);
+
+    margin: auto;
+    padding-top: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    width: 120px;
+    gap: 15px;
+    font-size: 0.85rem;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(-85deg, #e5e5e56e, var(--bg-dark), #171717);
+    background-size: 500%;
+    background-position: 35%;
+    color: var(--txt);
+    transition: 1s all;
+}
+
+.container button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 45px;
+    padding: 10px;
+       
+}
+
+.card:hover {
+    color: #101010;
+    background-position: 100%;
+    transform: rotateX(25deg) rotateY(25deg);
+    box-shadow: -3px 3px 3px #9f9f9f;
+}
+
+.card svg {
+    font-size: 3.5em;
+}
