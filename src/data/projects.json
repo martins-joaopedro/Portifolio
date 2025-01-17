@@ -11,9 +11,27 @@
       "status": 0,
       "results": [
         "Desenvolvido em equipe como uma atividade para a disciplina de Programação Orientada a Objetos.",
-        "O usuário pode manter sua coleção, adicionar avaliações e ler as de outros usuários, enquanto o administrador pode gerenciar as avaliações e o acervo de livros."
+        "Com essa Interface Swing, O usuário pode manter sua coleção, adicionar avaliações e ler as de outros usuários, enquanto o administrador pode gerenciar as avaliações e o acervo de livros."
       ],
-      "colors": ["#add7e5"],
+      "colors": ["#add7e5", "#3f18af", "#43a3e0"],
+      "github": "",
+      "deploy": ""
+    },
+    {
+      "name": "Oinkos",
+      "image": "src/assets/bookself.png",
+      "description": "Aplicação para Controle Pessoal de Finanças",
+      "tech": [
+        { "value": "Next", "icon": "" },
+        { "value": "Tailwind", "icon": "" },
+        { "value": "Figma", "icon": "" }
+      ],
+      "status": 1,
+      "results": [
+        "Desenvolvido em equipe como uma atividade para a disciplina de Modelagem de Sistemas.",
+        "O usuário pode gerenciar seus gastos adicionando e editando suas movimentações de saldo e acessar um relatório mensal, o que permite um maior controle de suas finanças."
+      ],
+      "colors": ["#51ABB4", "#7CA9AD", "#878787"],
       "github": "",
       "deploy": ""
     },
@@ -28,21 +46,28 @@
       "status": 0,
       "date": "11/2024",
       "results": [
-        "Aplicação construída como uma atividade para a disciplina de Programação Orientada a Objetos"
+        "Aplicação construída como uma atividade para a disciplina de Programação Orientada a Objetos",
+        "Consiste em uma Interface Swing que gera uma Tabela que permite adição e gerenciamento de Pessoas que comunica com serviços de validação dos dados."
       ],
-      "colors": ["#002220"],
+      "colors": ["#a34108", "#699c51" ],
       "github": "",
       "deploy": ""
     },
     {
       "name": "Coffe App",
       "image": "",
-      "description": "cdffd",
-      "tech": [{}],
+      "description": "Catálogo de Cafeteria",
+      "tech": [
+        { "value": "Next", "icon": "" },
+        { "value": "Tailwind", "icon": "" },
+        { "value": "Typescript", "icon": "" }
+      ],
       "status": 1,
       "date": "",
-      "results": [""],
-      "colors": ["#022290"],
+      "results": [
+        "Aplicação desenvolvida como forma de aprimorar os estudos em Next"
+      ],
+      "colors": ["#b86d4f"],
       "github": "",
       "deploy": ""
     },
@@ -53,7 +78,7 @@
       "tech": [{}],
       "status": 2,
       "date": "",
-      "colors": ["#002220", "#022290"],
+      "colors": ["#fa4454", "#b78460", "#042e27"],
       "results": [""],
       "github": "",
       "deploy": ""

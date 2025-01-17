@@ -1,6 +1,7 @@
 import styles from './styles.module.css'
 import { ProjectCard } from '../../components/ProjectCard'
 import { data } from '../../data/projects.json'
+import { useEffect, useRef } from 'react'
 
 export const Projects = () => {
   return (

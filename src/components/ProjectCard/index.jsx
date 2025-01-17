@@ -4,6 +4,7 @@ import styles from "./styles.module.css";
 import { FaGit, FaGithub } from "react-icons/fa";
 import { FaRegWindowRestore } from "react-icons/fa";
 import { FaWindowMaximize } from "react-icons/fa6";
+import { useInView } from "react-intersection-observer";
 
 export const ProjectCard = ({ data }) => {
   const {
@@ -20,24 +21,34 @@ export const ProjectCard = ({ data }) => {
 
   const STATUS = ["Concluído", "Em Andamento", "Pausado"];
 
-  //let finalResults = results?.split('\n')
+  const { ref, inView } = useInView();
 
   return (
     <div
       className={styles.view}
+      animate={inView.toString()}
       style={{
         "--color": colors[0],
       }}
     >
-      <div className={styles.container}>
-      
-
+      <div 
+        ref={ref}
+        className={styles.container}
+      >
         <div className={styles.image}>
           <img src={image} alt="img" />
-          {"../.."+image}
         </div>
         <div className={styles.details}>
-          <h3>{name}</h3>
+          <div className={styles.title}>
+            <h3>{name}</h3>
+            <div className={styles.colors}>
+              {
+                colors.map((color, key) => (
+                  <div key={key} style={{background: colors[key]}} className={styles.pallete}></div>
+                ))
+              }
+            </div>
+          </div>
           <p className={styles.description}>{description}</p>
           <span status={status.toString()} className={styles.status}>
             {STATUS[status]}
