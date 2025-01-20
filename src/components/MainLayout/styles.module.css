@@ -1,13 +1,11 @@
-import styled from "styled-components"
-
-export const Container = styled.div`
+.container {
     width: 100%;
     position: relative;
-`
+}
 
-export const Main = styled.main`
+main {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     height: 100vh;
     scroll-behavior: smooth;
-`
+}

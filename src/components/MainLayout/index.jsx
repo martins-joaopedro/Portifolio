@@ -1,4 +1,4 @@
-import { Container, Main } from "./styles.js";
+import styles from "./styles.module.css";
 
 import { IoHome } from "react-icons/io5";
 import { ImProfile } from "react-icons/im";
@@ -17,9 +17,11 @@ export const MainLayout = ({ children }) => {
   ];
 
   return (
-    <Container>
+    <div className={styles.container}>
       <Header links={links} />
-      <Main>{children}</Main>
-    </Container>
+      <main>
+        {children}
+      </main>
+    </div  >
   );
 };

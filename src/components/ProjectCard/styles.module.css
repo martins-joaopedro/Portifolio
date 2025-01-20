@@ -12,7 +12,7 @@
 }
 
 .view {
-    scroll-snap-align: center;
+    scroll-snap-align: start;
     width: 100%;
     height: 100%;
     animation: background 7s infinite alternate-reverse;
@@ -47,6 +47,7 @@
 
 .image img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     transition: 0.5s ease-out;
 }
@@ -194,7 +195,6 @@
     .image {
         width: 100%;
         height: 45%;
-        
     }
 
     .details {
@@ -244,15 +244,3 @@
     }
 }
 
-
-@keyframes fadeIn {
-
-    0% {
-        height: 85%;
-        filter: blur(2px);
-    }
-
-    100% {
-        height: 100%;
-    }
-}

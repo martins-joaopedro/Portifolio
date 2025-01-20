@@ -1,4 +1,3 @@
-import { Title } from "../../components/Title/index.jsx";
 import styles from "./styles.module.css";
 import profile from "../../assets/profile.png";
 
